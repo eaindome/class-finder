@@ -1,0 +1,10 @@
+# railway.yml
+
+name: classfinderproject1
+services:
+  db:
+    image: postgres
+    env:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Eai@2460
+      POSTGRES_DB: classfinderdatabase

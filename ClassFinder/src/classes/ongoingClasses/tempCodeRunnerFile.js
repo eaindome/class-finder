@@ -1,0 +1,2 @@
+getCurrentDay();
+getCurrentTime();

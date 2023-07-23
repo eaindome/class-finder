@@ -61,7 +61,7 @@ const bookClassNow = async (req, res) => {
         // Add the manually updated room ID to the array
         manuallyUpdatedRoomIds.push(roomId);
       }
-    }, 1 * 60 * 1000); // 5 minutes (converted to milliseconds)
+    }, 5 * 60 * 1000); // 5 minutes (converted to milliseconds)
 
     res.status(200).json({
       message: 'Class booked successfully.',
@@ -412,7 +412,7 @@ const bookClassLaterDay = async (req, res) => {
         // Add the manually updated room ID to the array
         manuallyUpdatedRoomIds.push(roomId);
       }
-    }, timeout - 10 * 60 * 1000); // 10 minutes (converted to milliseconds)
+    }, timeout - 5 * 60 * 1000); // 10 minutes (converted to milliseconds)
 
     // Update the room status to "Ongoing" after the start time
     setTimeout(async () => {

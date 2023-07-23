@@ -52,7 +52,7 @@ const updateRoomStatuses = async () => {
 // Automatically update room statuses at regular intervals
 const interval = setInterval(async () => {
   await updateRoomStatuses();
-}, 1 * 60 * 1000); // Update every 5 minutes or if you want for 1 minute (60000)
+}, 10 * 60 * 1000); // Update every 5 minutes or if you want for 1 minute (60000)
 
 // Stop updating room statuses when the application exits
 process.on('SIGINT', () => {
